@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "409805704288",
+    "project_id": "arsipin-6df35",
+    "storage_bucket": "arsipin-6df35.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:409805704288:android:f8b1f4f4248657f9318705",
+        "android_client_info": {
+          "package_name": "com.bim.arsipin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "409805704288-8ofrm3onl0ms5k14t0fkcc2paf55bo16.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.bim.arsipin",
+            "certificate_hash": "e07fe9783844c2cb7c3f9b106a50cd27ee605c7b"
+          }
+        },
+        {
+          "client_id": "409805704288-ebc2mgl4og0vjorpe7imt0308807ohhu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCPvdYrwc7WhJhJ3RHByMraPMyMmo30brI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "409805704288-ebc2mgl4og0vjorpe7imt0308807ohhu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
