@@ -69,6 +69,8 @@ public class CustomAdapter extends RecyclerView.Adapter<ViewHolder> {
                 }
                 dialog.setView(dialogView);
 
+                final AlertDialog dialoga = dialog.create();
+
                 LinearLayout btnDownload = (LinearLayout) dialogView.findViewById(R.id.btnDownload);
                 btnDownload.setOnClickListener(new View.OnClickListener() {
                     @Override
@@ -77,6 +79,7 @@ public class CustomAdapter extends RecyclerView.Adapter<ViewHolder> {
                         intent.setType("application/pdf");
                         intent.setData(Uri.parse(modelList.get(position).getUri()));
                         homeActivity.startActivity(intent);
+                        dialoga.dismiss();
                     }
                 });
 
@@ -95,6 +98,7 @@ public class CustomAdapter extends RecyclerView.Adapter<ViewHolder> {
                                     public void onSuccess(Void aVoid) {
                                         Toast.makeText(homeActivity, "Berhasil Menghapus Data", Toast.LENGTH_SHORT).show();
                                         homeActivity.showData(modelList.get(position).getArsip());
+                                        dialoga.dismiss();
                                     }
                                 }).addOnFailureListener(new OnFailureListener() {
                                     @Override
@@ -113,7 +117,7 @@ public class CustomAdapter extends RecyclerView.Adapter<ViewHolder> {
                     }
                 });
 
-                dialog.show();
+                dialoga.show();
             }
         });
 
