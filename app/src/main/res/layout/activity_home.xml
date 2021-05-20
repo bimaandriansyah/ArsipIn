@@ -292,8 +292,6 @@
             android:id="@+id/data"
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_marginLeft="20dp"
-            android:layout_marginRight="20dp"
             android:orientation="vertical"
             android:scrollbars="none"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -302,7 +300,8 @@
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/isiData"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                tools:listitem="@layout/data_view"/>
 
         </ScrollView>
 
